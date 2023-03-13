@@ -13,6 +13,7 @@ def index():
         animal = request.form["animal"]
         response = openai.Completion.create(
             model="text-davinci-003",
+            # prompt=animal,
             prompt=generate_prompt(animal),
             temperature=0.6,
         )
