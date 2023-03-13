@@ -1,18 +1,50 @@
-myenv/
+# Dependencies
+node_modules/
+vendor/
 
-*.pyc
+# Runtime cache
 __pycache__/
+*.pyc
+.venv/
+venv/
 
-instance/
+# Framework cache
+.next/
+.nuxt/
+.output/
+.cache/
+.parcel-cache/
+.turbo/
+bootstrap/cache/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
 
-.pytest_cache/
-.coverage
-htmlcov/
+# Package manager cache
+.yarn/
+.pnp.*
+.npm/
 
-dist/
-build/
-*.egg-info/
+# IDE / Editor (exclude sftp.json)
+/.idea/
+/.vscode/*
+!/.vscode/sftp.json
+*.sublime-workspace
+*.sublime-project
+/nbproject/
+.vs/
+*.swp
+*.swo
+*~
 
-.DS_STORE
+# OS
+.DS_Store
+Thumbs.db
 
-.env
+# Binaries / compiled
+*.o
+*.a
+*.so
+*.dylib
+*.wasm
+*.class
